@@ -156,11 +156,7 @@ server <- function(input, output) {
       
       # Calculul si afisarea functiei de repartitie empirica
       F <- ecdf(Y)
-      if (input$distribution %in% c("normal", "normal_custom", "exponential")) {
-        plot(F, main = "Functia de Repartitie Empirica", xlab = "Y", ylab = "F(Y)", col = "blue", lwd = 2)
-      } else {
-        plot(F, main = "Functia de Repartitie Empirica", xlab = "Y", ylab = "F(Y)", col = "blue", lwd = 2)
-      }
+      plot(F, main = "Functia de Repartitie Empirica", xlab = "Y", ylab = "F(Y)", col = "blue", lwd = 2)
     })
   })
   
