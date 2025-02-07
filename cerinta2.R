@@ -201,7 +201,7 @@ server <- function(input, output) {
       
       # Afisarea graficului
       if (input$functionB %in% c("fx3", "fx4")) {
-        plot(x, f, type = "p", main = "graficul functiei", xlab = "x", ylab = "f(x)", col = "red", lwd = 2)
+        plot(x, f, type = "p", main = "Graficul functiei", xlab = "x", ylab = "f(x)", col = "red", lwd = 2)
       } else {
         plot(x, f, type = "l", main = "Graficul functiei", xlab = "x", ylab = "f(x)", col = "red", lwd = 2)
       }
